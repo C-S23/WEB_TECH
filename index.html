@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Operations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="frnt.html">Return</a></li>
+            </ul>
+        </nav>
+        <button id="uploadButton">Upload</button>
+        <button id="downloadButton">Download</button>
+    </div>
+    
+    <div class="card-container">
+        <div class="card">
+            <img src="js.png" alt="Card Image" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">Card 1</h2>
+                <p class="card-description">download/upload <strong>JavaScript</strong>  files by providing .pdf or any image extension..!</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="java.jpeg" alt="Card Image" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">Card 2</h2>
+                <p class="card-description">download/upload <strong>Java</strong> files by providing .pdf or any image extension..!</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="mysql.png" alt="Card Image" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">Card 3</h2>
+                <p class="card-description">download/upload <strong>MySQL</strong>  files by providing .pdf or any image extension..!</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="laravel.png" alt="Card Image" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">Card 2</h2>
+                <p class="card-description">download/upload <strong>Laravel</strong>  files by providing .pdf or any image extension..!</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="css.jpg" alt="Card Image" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">Card 2</h2>
+                <p class="card-description">download/upload <strong>CSS</strong>  files by providing .pdf or any image extension..!</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="py.png" alt="Card Image" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">Card 2</h2>
+                <p class="card-description">download/upload <strong>Python</strong>  files by providing .pdf or any image extension..!</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="wincmd .png" alt="Card Image" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">Card 2</h2>
+                <p class="card-description">download/upload <strong>Windows-Commands</strong>  files by providing .pdf or any image extension..!</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="git.png" alt="Card Image" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">Card 2</h2>
+                <p class="card-description">download/upload <strong>Git Bash</strong>  files by providing .pdf or any image extension..!</p>
+            </div>
+        </div>
+        <!-- one can add more cards as needed -->
+    </div>
+
+    <!-- Upload Modal -->
+    <div id="uploadModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Upload a File</h2>
+            <form id="uploadForm" action="upload.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" required>
+                <input type="submit" value="Upload File">
+            </form>
+        </div>
+    </div>
+
+    <!-- Download Modal -->
+    <div id="downloadModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Download a File</h2>
+            <form id="downloadForm" action="download.php" method="post">
+                <label for="filename">File Name:</label>
+                <input type="text" name="filename" id="filename" required>
+                <input type="submit" value="Download File">
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
